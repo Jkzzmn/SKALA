@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+body {
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-indent: 0;
+    color:darkslateblue;
+    background-color: #D8EDE7;
+    line-height: 15px;
+}
+
+h1 {
+    color: blueviolet;
+    font-size: 50px;
+    padding: 20px;
+    border: 3px double crimson;
+    border-radius: 10px;
+    margin: 6px;
+    padding: 20px;
+    text-align: center;
+    animation: fadeInHeader 1s ease-out forwards;
+}
+
+h2 {
+    color: slateblue;
+    font-size: 32px;
+    padding: 10px;
+    margin-bottom: 3px;
+    background-color: cornsilk;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h3 {
+    color: black;
+    border-bottom: 1px solid cadetblue;
+    padding-bottom: 10px;
+    
+}
+
+a {
+    color: purple;
+    text-decoration: wavy;
+}
+
+a:hover {
+    color:darkmagenta;
+    text-decoration: underline;
+}
+
+li,ul,ol,dd,dt {
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.container {
+    border-color:darkseagreen;
+    border-style: dotted;
+    border-radius: 5px;
+    border-bottom: 5px dotted lightcoral;
+    border-width: 2px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+
+.trip-card {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.trip-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+
+
+.parent {
+    display: flex;
+    justify-content: space-between;
+}
+.child {
+    width: 48%;
+    height: 100px;
+}
+
+table {
+    border-color: darkblue;
+    text-align: center;
+    line-height: 1;
+}
+
+table {
+    width: 95%;       
+    margin: 20px auto;
+    background-color: #ffffff;
+}
+
+th, td {
+    text-align: center;
+}
+
+th {
+    background-color: darkslateblue;
+    color: white;
+    font-weight: bold;
+}
+
+
+fieldset {
+    border: 2px solid darkblue;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 5px;
+}
+
+label {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+input[name="userId"],input[name="userPw"],input[name="userName"],input[name="userEmail"],input[name="userBirth"],textarea[name="intro"],select[name="emailDomain"] {
+    width: 95%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid darkblue;
+    border-radius: 4px;
+    display: block;
+}
+
+input[type="button"] {
+    background-color: darkblue;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: large;
+    border-radius: 8px;
+    border-color: darkblue;
+    font-family: "Gowun Dodum", sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="reset"] {
+    background-color: white;
+    color: darkblue;
+    width: 200px;
+    height: 50px;
+    font-size: large;
+    border-radius: 8px;
+    border-color: darkblue;
+    font-family: "Gowun Dodum", sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="button"]:hover {
+    background-color: darkmagenta;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover {
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
+
+.nav {
+    border-radius: 8px;
+    list-style-type: none;
+    text-align: center;
+    font-size: 0;
+}
+.nav li {
+    background-color: lightgray;
+    margin: 1%;
+    border-radius: 8px;
+    display: inline-block; 
+    width: 15%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 18px; 
+    padding: 15px;
+    text-align: center;
+    line-height: 23px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.nav li:hover {
+    background-color: #b0bec5;
+    cursor: pointer;
+}
+
+.flex_box {
+    display: flex;
+    gap:10px;
+}
+.main {
+    flex: 2;
+}
+.info {
+    flex:1;
+}
+
+.grid_card {
+    display: grid;
+    grid-template-areas: 'item1 item2 item3';
+}
+.trip-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 786px) {
+    .flex_box {
+        flex-direction: column;
+    }
+    .nav {
+        flex-direction: column;
+    }
+    
+    .nav li {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .grid_card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    h1, h2, h3 {
+        height: auto; 
+        line-height: 1.4; 
+        font-size: 100%; 
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+}
+.update {
+    font-weight: bold;
+    color: brown;
+}
+button {
+    text-align: center;
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+select[name="citySelect"]{
+    width: 100%;
+    border-color: darkblue;
+    color: darkblue;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: antiquewhite;
+}
+.city-box {
+    border: 2px dotted green;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 5px;
+}
+@keyframes fadeInHeader {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button:hover {
+    background-color: #0000cd;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;

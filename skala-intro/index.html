@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome SKALA</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>DaekDaek's Universe 🌎</h1>
+        <p>프로필, 학습내용, 여행 기록을 모아둔 Hub Page입니다.</p>
+        <h2>🗂️ 바로가기</h2>    
+        <ul class="nav" style="list-style-type: disc;">
+            <li><a href="http://127.0.0.1:5500/html/myProfile.html" target="_self">나의 프로필(myProfile)</a></li>
+            <li><a href="http://127.0.0.1:5500/html/myClass.html" target="_self">수업 시간표(myClass)</a></li>
+            <li><a href="http://127.0.0.1:5500/html/myHoliday.html" target="_self">휴일 계획(myHoliday)</a></li>
+            <li><a href="http://127.0.0.1:5500/html/myTrip.html" target="_self">여행 앨범(myTrip)</a></li>
+            <li><a href="http://127.0.0.1:5500/html/signUp.html" target="_self">👤 회원가입(Sign Up)</a></li>
+        </ul>
+        <hr>
+        <div class="flex_box">
+            <div class="main">                <h2>📌 오늘의 주요 소식</h2>
+                <h3>최근 공지 및 업데이트</h3>
+                <p class="upadte"><strong>[업데이트] 여행 앨범에 동영상 추가 완료!</strong></p>
+                <p>삿포로 어딘가의 폭포를 배경으로 한 브이로그 영상 추가 완료했습니다~.</p>
+                <p>작성일: 2026.07.15</p>
+                <br><br>
+                <h3>🤳 이달의 베스트 컷</h3>
+                <aside>
+                    <dl>
+                        <dt></dt>
+                        <dd><picture>
+                        <img src="media/kotaki.jpg" alt="코타키나발루" height="240">
+                        <figcaption>말레샤 코타키나발루(2026)</figcaption>
+                        </picture></dd>
+                    </dl>
+                </aside>
+            </div>
+            <div class="info">
+                <main>
+                    <h2>ℹ️ 실시간 정보</h2>
+                    <p>현재 위치 : 광주광역시 광산구 📍</p>
+                    <p>추천 학습 사이트:<a href="https://www.w3schools.com/"> W3Schools 온라인 명세서</a> </p>
+                    <div id="weather-box">
+                        <h3> ☀️ 실시간 세계 날씨</h3>
+                        <select name="citySelect" id="citySelect">
+                            <option value="">도시를 선택하세요 --</option>
+                            <option value="Seoul">🇰🇷 서울</option>
+                            <option value="Tokyo">🇯🇵 도쿄</option>
+                            <option value="Madrid">🇪🇸 마드리드</option>
+                            <option value="Monterrey">🇲🇽 몬테레이</option>
+                            <option value="LA">🇺🇸 로스앤젤레스</option>
+                        </select>
+                        <div id="weatherResult"></div>
+                        <hr>
+                        <div id="cityResult">
+                            <p>도시를 선택하면 좌표가 여기에 표시됩니다.</p>
+                        </div>
+                    </div>
+
+                </main>
+                <br>
+                <aside>
+                    <section>
+                        <h3>🎮 자바스크립트천국</h3>
+                        <button onclick="updowngame()">업다운 게임 시작!</button>
+                        <br><br>
+                        <button onclick="grade()"> 성적 입력</button>
+                        <br><br>
+                        <button onclick="bag()"> 내 가방 속</button>
+                    </section>
+                </aside>
+            </div>
+        </div>
+        <hr>
+        <p>이메일 문의: rlaeogus2775@gmail.com</p>
+        <p><small>2026 Daek's 포트폴리오. 모든 태그는 웹 표준 시멘틱 태그로 작성되었습니다.</small></p>
+        <script src="script/upDown.js"></script>
+        <script src="script/grade.js"></script>
+        <script src="script/bag.js"></script>
+        <script type="module" src="script/realtimeInfo.js"></script>
+    </body>
+    
+</html>
